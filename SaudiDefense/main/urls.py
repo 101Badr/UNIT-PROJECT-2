@@ -10,4 +10,7 @@ urlpatterns = [
     path('companies/', views.companies, name='companies'),
     path('vision/', views.vision, name='vision'),
     path('about/', views.about, name='about'),
+    path('sectors/', views.sectors, name='sectors'),
+    path('sectors/<slug:sector_slug>/', views.sector_detail, name='sector_detail'),
+
 ]

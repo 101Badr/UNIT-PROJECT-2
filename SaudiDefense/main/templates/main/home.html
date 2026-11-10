@@ -27,11 +27,12 @@
 
         <div class="hero-buttons">
 
-            <a href="#sectors" class="btn btn-primary"
-               data-ar="استكشف القطاعات"
-               data-en="Explore Sectors">
-                استكشف القطاعات
-            </a>
+           <a href="{% url 'main:sectors' %}"
+        class="btn btn-primary"
+        data-ar="استكشف القطاعات"
+        data-en="Explore Sectors">
+         استكشف القطاعات
+        </a>
 
             <a href="{% url 'main:history' %}"
                class="btn btn-hero-outline"
