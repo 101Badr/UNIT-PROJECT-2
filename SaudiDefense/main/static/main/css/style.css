@@ -1431,10 +1431,12 @@ body:not(.dark-mode) .development-footer p {
 
 .history-item:nth-child(odd)::before {
     right: -12px;
+    left: auto;
 }
 
 .history-item:nth-child(even)::before {
-    left: -12px;
+    right: 8px;
+    left: auto;
 }
 
 .history-year {
