@@ -349,6 +349,18 @@
         transition: none !important;
     }
 }
+.sectors-page .sector-card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.sectors-page .sector-card-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 </style>
 
 <div class="sectors-page" dir="auto">
@@ -490,13 +502,17 @@
 
                 <article class="sector-card">
 
-                   <div class="sector-image">
-    <a href="{% url 'main:sector_detail' 'naval' %}" class="sector-card-link"></a>
-    <img src="{% static 'main/images/naval.jpg' %}"
-         alt="الصناعات البحرية السعودية"
-         loading="lazy">
-    <span class="sector-number">03</span>
-</div>
+      <div class="sector-image">
+    <a href="{% url 'main:sector_detail' 'naval' %}" class="sector-card-link">
+
+        <img src="{% static 'main/images/naval.jpg' %}"
+             alt="الصناعات البحرية السعودية"
+             loading="lazy">
+
+        <span class="sector-number">03</span>
+
+        </a>
+        </div>      
 
                     <div class="sector-content">
 
@@ -529,11 +545,15 @@
                 <article class="sector-card">
 
                     <div class="sector-image">
-    <a href="{% url 'main:sector_detail' 'technology' %}" class="sector-card-link"></a>
-    <img src="{% static 'main/images/technology.jpg' %}"
-         alt="التقنيات الدفاعية السعودية"
-         loading="lazy">
-    <span class="sector-number">04</span>
+    <a href="{% url 'main:sector_detail' 'technology' %}" class="sector-card-link">
+
+        <img src="{% static 'main/images/technology.jpg' %}"
+             alt="التقنيات الدفاعية السعودية"
+             loading="lazy">
+
+        <span class="sector-number">04</span>
+
+    </a>
 </div>
 
                     <div class="sector-content">
