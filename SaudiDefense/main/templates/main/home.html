@@ -90,7 +90,7 @@
     document.head.appendChild(videoScript);
 
     let defensePlayer;
-    let videoTimer;
+    
 
     window.onYouTubeIframeAPIReady = function () {
 
@@ -98,34 +98,21 @@
 
             videoId: "qGjY2b60B_4",
 
-            playerVars: {
-                autoplay: 1,
-                controls: 0,
-                mute: 1,
-                playsinline: 1,
-                rel: 0,
-                modestbranding: 1
-            },
+        playerVars: {
+        autoplay: 1,
+        controls: 1,
+        fs: 1,
+        mute: 1,
+        playsinline: 1,
+        rel: 0
+        },
 
             events: {
 
-                onReady: function (event) {
-                    event.target.mute();
-                    event.target.playVideo();
-
-                    videoTimer = setInterval(function () {
-
-                        if (
-                            defensePlayer &&
-                            defensePlayer.getPlayerState() === 1 &&
-                            defensePlayer.getCurrentTime() >= 10
-                        ) {
-                            defensePlayer.seekTo(0, true);
-                        }
-
-                    }, 250);
-                },
-
+              onReady: function (event) {
+    event.target.mute();
+    event.target.playVideo();
+},
                 onError: function () {
                     console.log("Video could not be loaded.");
                 }
