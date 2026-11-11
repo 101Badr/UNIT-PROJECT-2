@@ -1,7 +1,11 @@
-
 {% extends 'main/base.html' %}
+{% load static %}
 
 {% block title %}من نحن | Saudi Defense 2030{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+{% endblock %}
 
 {% block content %}
 

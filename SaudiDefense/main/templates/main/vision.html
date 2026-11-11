@@ -2,8 +2,11 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
-{% block title %}رؤية السعودية 2030 | Saudi Defense{% endblock %}
 
+{% block title %}رؤية السعودية 2030 | Saudi Defense{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/css/vision.css' %}">
+{% endblock %}
 {% block content %}
 
 <section class="vision-hero">
@@ -146,8 +149,55 @@
     </div>
 </section>
 
+</section>
+
+
+<section class="vision-film" id="vision-film">
+    <div class="vision-container">
+
+        <div class="vision-film-heading">
+            <span class="vision-label"
+                  data-ar="شاهد التحول"
+                  data-en="WATCH THE TRANSFORMATION">
+                شاهد التحول
+            </span>
+
+            <h2 data-ar="من الرؤية إلى واقع الصناعة"
+                data-en="From Vision to Industrial Reality">
+                من الرؤية إلى واقع الصناعة
+            </h2>
+
+            <p data-ar="اكتشف دور توطين الصناعات العسكرية في بناء مستقبل الصناعة الوطنية وتعزيز القدرات السعودية."
+               data-en="Discover how defense industry localization contributes to building Saudi Arabia's industrial future and strengthening national capabilities.">
+                اكتشف دور توطين الصناعات العسكرية في بناء مستقبل الصناعة الوطنية وتعزيز القدرات السعودية.
+            </p>
+        </div>
+
+        <div class="vision-film-frame">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/3hxyD6y47DE"
+                title="توطين الصناعات العسكرية السعودية"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="vision-film-footer">
+            <span class="vision-film-indicator"></span>
+
+            <p data-ar="توطين الصناعات العسكرية | رؤية السعودية 2030"
+               data-en="Defense Industry Localization | Saudi Vision 2030">
+                توطين الصناعات العسكرية | رؤية السعودية 2030
+            </p>
+        </div>
+
+    </div>
+</section>
 
 <section class="vision-journey">
+
     <div class="vision-container">
         <div class="vision-heading">
             <span class="vision-label"

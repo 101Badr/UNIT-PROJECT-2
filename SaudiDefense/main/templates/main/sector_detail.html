@@ -3,7 +3,9 @@
 {% load static %}
 
 {% block title %}{{ sector.title_ar }} | Saudi Defense 2030{% endblock %}
-
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'main/css/sector-detail.css' %}">
+{% endblock %}
 {% block content %}
 
 <section class="sector-detail-hero">
